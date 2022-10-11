@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Colubel View Controller-->
+        <scene sceneID="wrc-R0-zZm">
+            <objects>
+                <viewController id="eFL-ea-YmR" customClass="ColubelViewController" customModule="lullabies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Mw-sU-1rT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRY-kh-oiv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Колыбельные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3R-pk-OHu">
+                                        <rect key="frame" x="108" y="204" width="211" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl3-fC-IKT">
+                                        <rect key="frame" x="17" y="516" width="180" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9r-6h-tFX">
+                                        <rect key="frame" x="205" y="293" width="180" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kz-SJ-fgr">
+                                        <rect key="frame" x="205" y="516" width="180" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itD-mQ-vNd">
+                                        <rect key="frame" x="17" y="292" width="180" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <connections>
+                                            <action selector="buttonColubel:" destination="eFL-ea-YmR" eventType="touchUpInside" id="Mgt-Bf-LnV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="a3R-pk-OHu" firstAttribute="top" secondItem="fRY-kh-oiv" secondAttribute="top" constant="204" id="Ath-3Y-j2F"/>
+                                    <constraint firstAttribute="trailing" secondItem="a3R-pk-OHu" secondAttribute="trailing" constant="95" id="DJ8-AH-mCa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QjF-eZ-FKq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fRY-kh-oiv" secondAttribute="bottom" id="8dW-dJ-3FU"/>
+                            <constraint firstItem="fRY-kh-oiv" firstAttribute="top" secondItem="6Mw-sU-1rT" secondAttribute="top" id="HrK-um-zVb"/>
+                            <constraint firstItem="QjF-eZ-FKq" firstAttribute="trailing" secondItem="fRY-kh-oiv" secondAttribute="trailing" id="Lxf-ZD-Svk"/>
+                            <constraint firstItem="fRY-kh-oiv" firstAttribute="leading" secondItem="QjF-eZ-FKq" secondAttribute="leading" id="Wq9-hr-lFw"/>
+                            <constraint firstItem="QjF-eZ-FKq" firstAttribute="top" secondItem="fRY-kh-oiv" secondAttribute="top" constant="44" id="YRL-Gv-nJ7"/>
+                            <constraint firstItem="fRY-kh-oiv" firstAttribute="trailing" secondItem="QjF-eZ-FKq" secondAttribute="trailing" id="aDa-4j-HVh"/>
+                            <constraint firstItem="fRY-kh-oiv" firstAttribute="leading" secondItem="QjF-eZ-FKq" secondAttribute="leading" id="lkp-RJ-fCx"/>
+                            <constraint firstItem="fRY-kh-oiv" firstAttribute="bottom" secondItem="QjF-eZ-FKq" secondAttribute="bottom" constant="34" id="u4e-zm-39f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fourColubel" destination="2Kz-SJ-fgr" id="v4S-te-Kjd"/>
+                        <outlet property="oneColubel" destination="itD-mQ-vNd" id="MBC-CL-97E"/>
+                        <outlet property="thoColubel" destination="U9r-6h-tFX" id="RLC-Xa-6z1"/>
+                        <outlet property="threColubel" destination="Pl3-fC-IKT" id="oyG-pI-h1X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCe-ZH-D7S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="-588.61607142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
